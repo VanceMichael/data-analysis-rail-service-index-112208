@@ -1,0 +1,47 @@
+[
+  {
+    "period": "P1",
+    "od": "O1",
+    "origin": "H1",
+    "destination": "H3",
+    "cargo": "杂货",
+    "weight": "27",
+    "framework": "V2"
+  },
+  {
+    "period": "P1",
+    "od": "O2",
+    "origin": "H2",
+    "destination": "H3",
+    "cargo": "木材",
+    "weight": "19",
+    "framework": "V2"
+  },
+  {
+    "period": "P1",
+    "od": "O3",
+    "origin": "H3",
+    "destination": "H2",
+    "cargo": "木材",
+    "weight": "11",
+    "framework": "V2"
+  },
+  {
+    "period": "P1",
+    "od": "O4",
+    "origin": "H1",
+    "destination": "H2",
+    "cargo": "散货",
+    "weight": "16",
+    "framework": "V2"
+  },
+  {
+    "period": "P1",
+    "od": "N1",
+    "origin": "H2",
+    "destination": "H4",
+    "cargo": "散货",
+    "weight": "27",
+    "framework": "V2"
+  }
+]

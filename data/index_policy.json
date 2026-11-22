@@ -1,0 +1,14 @@
+[
+  {
+    "grade": "甲",
+    "min_index": "0.8",
+    "detailed": "开行路线",
+    "min_group": "3"
+  },
+  {
+    "grade": "乙",
+    "min_index": "0.6",
+    "detailed": "站点级",
+    "min_group": "3"
+  }
+]

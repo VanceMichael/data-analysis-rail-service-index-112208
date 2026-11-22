@@ -1,0 +1,101 @@
+[
+  {
+    "period": "P0",
+    "route": "T1",
+    "from_station": "S1",
+    "to_station": "S2",
+    "cargo": "杂货",
+    "depart": "10",
+    "arrive": "20",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P0",
+    "route": "T2",
+    "from_station": "S2",
+    "to_station": "S3",
+    "cargo": "杂货",
+    "depart": "22",
+    "arrive": "40",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P0",
+    "route": "T3",
+    "from_station": "S2",
+    "to_station": "S3",
+    "cargo": "木材",
+    "depart": "25",
+    "arrive": "45",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T4",
+    "from_station": "S1",
+    "to_station": "S2a",
+    "cargo": "杂货",
+    "depart": "10",
+    "arrive": "19",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T5",
+    "from_station": "S2a",
+    "to_station": "S3",
+    "cargo": "杂货",
+    "depart": "22",
+    "arrive": "38",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T6",
+    "from_station": "S2a",
+    "to_station": "S3",
+    "cargo": "木材",
+    "depart": "25",
+    "arrive": "40",
+    "accept": "no",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T7",
+    "from_station": "S3",
+    "to_station": "S2a",
+    "cargo": "木材",
+    "depart": "42",
+    "arrive": "56",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T8",
+    "from_station": "S2b",
+    "to_station": "S4",
+    "cargo": "散货",
+    "depart": "20",
+    "arrive": "32",
+    "accept": "yes",
+    "run": "yes"
+  },
+  {
+    "period": "P1",
+    "route": "T9",
+    "from_station": "S1",
+    "to_station": "S2b",
+    "cargo": "散货",
+    "depart": "10",
+    "arrive": "18",
+    "accept": "?",
+    "run": "?"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "station": "S1",
+    "version": "V1",
+    "canonical": "H1",
+    "regional": "西",
+    "share": "1",
+    "cargo": "杂货"
+  },
+  {
+    "station": "S2",
+    "version": "V1",
+    "canonical": "H2",
+    "regional": "西",
+    "share": "1",
+    "cargo": "木材"
+  },
+  {
+    "station": "S2a",
+    "version": "V2",
+    "canonical": "H2",
+    "regional": "西",
+    "share": "0.6",
+    "cargo": "木材"
+  },
+  {
+    "station": "S2b",
+    "version": "V2",
+    "canonical": "H2",
+    "regional": "北",
+    "share": "0.4",
+    "cargo": "散货"
+  },
+  {
+    "station": "S3",
+    "version": "V1",
+    "canonical": "H3",
+    "regional": "东",
+    "share": "1",
+    "cargo": "杂货"
+  },
+  {
+    "station": "S3",
+    "version": "V2",
+    "canonical": "H3",
+    "regional": "东",
+    "share": "1",
+    "cargo": "杂货"
+  },
+  {
+    "station": "S4",
+    "version": "V2",
+    "canonical": "H4",
+    "regional": "东",
+    "share": "1",
+    "cargo": "木材"
+  }
+]

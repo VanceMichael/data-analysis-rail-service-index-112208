@@ -1,0 +1,29 @@
+[
+  {
+    "period": "P0",
+    "station": "S2",
+    "from_route": "T1",
+    "to_route": "T2",
+    "cargo": "杂货",
+    "min_wait": "2",
+    "state": "有效"
+  },
+  {
+    "period": "P1",
+    "station": "S2a",
+    "from_route": "T4",
+    "to_route": "T5",
+    "cargo": "杂货",
+    "min_wait": "5",
+    "state": "不足"
+  },
+  {
+    "period": "P1",
+    "station": "S2a",
+    "from_route": "T4",
+    "to_route": "T5",
+    "cargo": "杂货",
+    "min_wait": "3",
+    "state": "已更正"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "report": "R0",
+    "period": "P0",
+    "scope": "全区",
+    "recipient": "行业",
+    "permission": "公开",
+    "current": "1",
+    "state": "已付阅"
+  },
+  {
+    "report": "R1",
+    "period": "P1",
+    "scope": "西区",
+    "recipient": "W",
+    "permission": "西区木材",
+    "current": "1",
+    "state": "待发"
+  },
+  {
+    "report": "R2",
+    "period": "P1",
+    "scope": "北区",
+    "recipient": "N",
+    "permission": "受限散货",
+    "current": "1",
+    "state": "已送"
+  },
+  {
+    "report": "R3",
+    "period": "P1",
+    "scope": "全区",
+    "recipient": "行业",
+    "permission": "公开",
+    "current": "1",
+    "state": "待发"
+  }
+]
