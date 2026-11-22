@@ -50,8 +50,8 @@
     "routes": "T4+T5",
     "cargo": "杂货",
     "request": "受理",
-    "connection": "接续成功",
-    "delivery": "已交付",
+    "connection": "待核",
+    "delivery": "待核",
     "reported_at": "P1-26"
   },
   {
@@ -97,5 +97,16 @@
     "connection": "直达",
     "delivery": "已交付",
     "reported_at": "P1-27"
+  },
+  {
+    "observation": "J16",
+    "period": "P1",
+    "od": "O1",
+    "routes": "T4+T5",
+    "cargo": "杂货",
+    "request": "受理",
+    "connection": "接续成功",
+    "delivery": "已交付",
+    "reported_at": "P1-31"
   }
 ]

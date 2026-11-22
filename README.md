@@ -9,7 +9,7 @@
 - `frames.json` 记录字段为 `station`、`version`、`canonical`、`regional`、`share`、`cargo`。
 - `baseline.json` 记录字段为 `od`、`origin`、`destination`、`cargo`、`weight`、`framework`。
 - `schedules.json` 记录字段为 `period`、`route`、`from_station`、`to_station`、`cargo`、`depart`、`arrive`、`accept`、`run`。
-- `transfers.json` 记录字段为 `period`、`station`、`from_route`、`to_route`、`cargo`、`min_wait`、`state`。
+- `transfers.json` 记录字段为 `period`、`station`、`from_route`、`to_route`、`cargo`、`min_wait`、`state`、`reported_at`。
 - `reporting.json` 记录字段为 `report`、`period`、`scope`、`recipient`、`permission`、`current`、`state`。
 - `index_policy.json` 记录字段为 `grade`、`min_index`、`detailed`、`min_group`。
 
@@ -17,7 +17,7 @@
 - `current_frame.json` 记录字段为 `period`、`od`、`origin`、`destination`、`cargo`、`weight`、`framework`。
 - `report_receipts.json` 记录字段为 `report`、`revision`、`at`、`event`、`recipient`、`material`。
 
-journey_observations 为托运代理回单。current_frame 给出当期业务框架。report_receipts 为收件记录，reporting 的 current 对应报表口径版本。P0 和 P1 为连续两个报送期，后缀为期内记录次序。
+journey_observations 为托运代理回单。current_frame 给出当期业务框架。report_receipts 为收件记录，reporting 的 current 对应报表口径版本。P0 和 P1 为连续两个报送期，后缀为期内记录次序。P0 使用 V1 站场框架，P1 使用 V2。站场框架中的 cargo 是统计框架登记的主要货类，具体一班能办理的货类见运行图。换装表按 reported_at 记录各次报送。托运回单以期别、起讫编号和运行路径关联，后续回单可更新先前的观察。
 
 ## 运行
 

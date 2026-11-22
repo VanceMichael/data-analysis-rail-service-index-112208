@@ -6,7 +6,8 @@
     "to_route": "T2",
     "cargo": "杂货",
     "min_wait": "2",
-    "state": "有效"
+    "state": "有效",
+    "reported_at": "P0-01"
   },
   {
     "period": "P1",
@@ -15,7 +16,8 @@
     "to_route": "T5",
     "cargo": "杂货",
     "min_wait": "5",
-    "state": "不足"
+    "state": "不足",
+    "reported_at": "P1-01"
   },
   {
     "period": "P1",
@@ -24,6 +26,7 @@
     "to_route": "T5",
     "cargo": "杂货",
     "min_wait": "3",
-    "state": "已更正"
+    "state": "已更正",
+    "reported_at": "P1-30"
   }
 ]

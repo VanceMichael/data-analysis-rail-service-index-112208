@@ -31,3 +31,23 @@ test('关联的来源记录保留各自的引用字段', () => {
   assert.ok(leftRows.every(row => row[leftField]))
   assert.ok(rightRows.every(row => row[rightField]))
 })
+
+
+test('运行图引用本期站场框架，复报时间可与收悉回单区分', () => {
+  const versionForPeriod = { P0: 'V1', P1: 'V2' }
+  const stationVersions = new Set(records.get('frames').map(row => `${row.station}/${row.version}`))
+  for (const row of records.get('schedules')) {
+    const version = versionForPeriod[row.period]
+    assert.ok(stationVersions.has(`${row.from_station}/${version}`), row.route)
+    assert.ok(stationVersions.has(`${row.to_station}/${version}`), row.route)
+  }
+  for (const row of records.get('transfers')) {
+    assert.match(row.reported_at, /^P[01]-[0-9]+$/)
+    assert.equal(row.reported_at.split('-')[0], row.period)
+  }
+  const receipt = records.get('report_receipts').find(row => row.report === 'R2')
+  const revisions = records.get('transfers').filter(row => row.from_route === 'T4')
+  assert.equal(new Set(revisions.map(row => row.reported_at)).size, revisions.length)
+  assert.ok(revisions.some(row => row.reported_at < receipt.at))
+  assert.ok(revisions.some(row => row.reported_at > receipt.at))
+})

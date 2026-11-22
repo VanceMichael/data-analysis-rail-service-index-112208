@@ -8,6 +8,14 @@
     "cargo": "杂货"
   },
   {
+    "station": "S1",
+    "version": "V2",
+    "canonical": "H1",
+    "regional": "西",
+    "share": "1",
+    "cargo": "杂货"
+  },
+  {
     "station": "S2",
     "version": "V1",
     "canonical": "H2",
@@ -53,6 +61,6 @@
     "canonical": "H4",
     "regional": "东",
     "share": "1",
-    "cargo": "木材"
+    "cargo": "散货"
   }
 ]
