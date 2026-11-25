@@ -1,0 +1,521 @@
+{
+  "P0": {
+    "period": "P0",
+    "correctionCutoff": "P0-01",
+    "manifests": {
+      "R0": {
+        "report": "R0",
+        "period": "P0",
+        "scope": "全区",
+        "recipient": "行业",
+        "permission": "公开",
+        "grade": "乙",
+        "scopeGrade": null,
+        "detailLevel": "station",
+        "aggregate": {
+          "index": 0.46,
+          "observedScopeIndex": 1,
+          "observedCoverage": 0.46,
+          "reachableWeight": 46,
+          "totalWeight": 100,
+          "originGroupCount": 3,
+          "relationCount": 5
+        },
+        "relations": [
+          {
+            "od": "O1",
+            "origin": "H1",
+            "destination": "H3",
+            "cargo": "杂货",
+            "status": "reachable",
+            "weight": 27,
+            "detailLevel": "station",
+            "originStations": [
+              {
+                "station": "S1",
+                "regional": "西",
+                "share": 1
+              }
+            ]
+          },
+          {
+            "od": "O2",
+            "origin": "H2",
+            "destination": "H3",
+            "cargo": "木材",
+            "status": "reachable",
+            "weight": 19,
+            "detailLevel": "station",
+            "originStations": [
+              {
+                "station": "S2",
+                "regional": "西",
+                "share": 1
+              }
+            ]
+          },
+          {
+            "od": "O3",
+            "origin": "H3",
+            "destination": "H2",
+            "cargo": "木材",
+            "status": "pending_evidence",
+            "weight": 11,
+            "detailLevel": "station",
+            "originStations": [
+              {
+                "station": "S3",
+                "regional": "东",
+                "share": 1
+              }
+            ]
+          },
+          {
+            "od": "O4",
+            "origin": "H1",
+            "destination": "H2",
+            "cargo": "散货",
+            "status": "pending_evidence",
+            "weight": 16,
+            "detailLevel": "station",
+            "originStations": [
+              {
+                "station": "S1",
+                "regional": "西",
+                "share": 1
+              }
+            ]
+          },
+          {
+            "od": "N1",
+            "origin": "H2",
+            "destination": "H4",
+            "cargo": "散货",
+            "status": "pending_evidence",
+            "weight": 27,
+            "detailLevel": "station",
+            "originStations": [
+              {
+                "station": "S2",
+                "regional": "西",
+                "share": 1
+              }
+            ]
+          }
+        ],
+        "basedOnTransferRevisions": [
+          {
+            "station": "S2",
+            "fromRoute": "T1",
+            "toRoute": "T2",
+            "state": "有效",
+            "reportedAt": "P0-01"
+          }
+        ]
+      }
+    },
+    "plans": [
+      {
+        "report": "R0",
+        "recipient": "行业",
+        "action": "unchanged",
+        "revision": "1",
+        "receivedAt": "P0-31"
+      }
+    ],
+    "reconciliation": {
+      "ok": true,
+      "publicReachableWeight": 46,
+      "partnerReachableWeightUnion": 0,
+      "violations": []
+    },
+    "antiInference": []
+  },
+  "P1": {
+    "period": "P1",
+    "correctionCutoff": "P1-30",
+    "manifests": {
+      "R1": {
+        "report": "R1",
+        "period": "P1",
+        "scope": "西区",
+        "recipient": "W",
+        "permission": "西区木材",
+        "grade": null,
+        "scopeGrade": null,
+        "detailLevel": "aggregate_only",
+        "aggregate": {
+          "index": 0.3667,
+          "observedScopeIndex": 0.3667,
+          "observedCoverage": 1,
+          "reachableWeight": 11,
+          "totalWeight": 30,
+          "originGroupCount": 2,
+          "relationCount": 2
+        },
+        "relations": [
+          {
+            "od": "O2",
+            "origin": "H2",
+            "destination": "H3",
+            "cargo": "木材",
+            "status": "not_accepting",
+            "weight": 19,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "O3",
+            "origin": "H3",
+            "destination": "H2",
+            "cargo": "木材",
+            "status": "reachable",
+            "weight": 11,
+            "detailLevel": "aggregate_only"
+          }
+        ],
+        "basedOnTransferRevisions": [
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "不足",
+            "reportedAt": "P1-01"
+          },
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "已更正",
+            "reportedAt": "P1-30"
+          }
+        ]
+      },
+      "R2": {
+        "report": "R2",
+        "period": "P1",
+        "scope": "北区",
+        "recipient": "N",
+        "permission": "受限散货",
+        "grade": null,
+        "scopeGrade": null,
+        "detailLevel": "aggregate_only",
+        "aggregate": {
+          "index": 0.6279,
+          "observedScopeIndex": 1,
+          "observedCoverage": 0.6279,
+          "reachableWeight": 27,
+          "totalWeight": 43,
+          "originGroupCount": 2,
+          "relationCount": 2
+        },
+        "relations": [
+          {
+            "od": "O4",
+            "origin": "H1",
+            "destination": "H2",
+            "cargo": "散货",
+            "status": "pending_evidence",
+            "weight": 16,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "N1",
+            "origin": "H2",
+            "destination": "H4",
+            "cargo": "散货",
+            "status": "reachable",
+            "weight": 27,
+            "detailLevel": "aggregate_only"
+          }
+        ],
+        "basedOnTransferRevisions": [
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "不足",
+            "reportedAt": "P1-01"
+          },
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "已更正",
+            "reportedAt": "P1-30"
+          }
+        ]
+      },
+      "R3": {
+        "report": "R3",
+        "period": "P1",
+        "scope": "全区",
+        "recipient": "行业",
+        "permission": "公开",
+        "grade": null,
+        "scopeGrade": "乙",
+        "detailLevel": "aggregate_only",
+        "aggregate": {
+          "index": 0.65,
+          "observedScopeIndex": 0.7738,
+          "observedCoverage": 0.84,
+          "reachableWeight": 65,
+          "totalWeight": 100,
+          "originGroupCount": 3,
+          "relationCount": 5
+        },
+        "relations": [
+          {
+            "od": "O1",
+            "origin": "H1",
+            "destination": "H3",
+            "cargo": "杂货",
+            "status": "reachable",
+            "weight": 27,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "O2",
+            "origin": "H2",
+            "destination": "H3",
+            "cargo": "木材",
+            "status": "not_accepting",
+            "weight": 19,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "O3",
+            "origin": "H3",
+            "destination": "H2",
+            "cargo": "木材",
+            "status": "reachable",
+            "weight": 11,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "O4",
+            "origin": "H1",
+            "destination": "H2",
+            "cargo": "散货",
+            "status": "pending_evidence",
+            "weight": 16,
+            "detailLevel": "aggregate_only"
+          },
+          {
+            "od": "N1",
+            "origin": "H2",
+            "destination": "H4",
+            "cargo": "散货",
+            "status": "reachable",
+            "weight": 27,
+            "detailLevel": "aggregate_only"
+          }
+        ],
+        "basedOnTransferRevisions": [
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "不足",
+            "reportedAt": "P1-01"
+          },
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "已更正",
+            "reportedAt": "P1-30"
+          }
+        ]
+      }
+    },
+    "plans": [
+      {
+        "report": "R1",
+        "recipient": "W",
+        "action": "reissue_current_scope",
+        "revision": "2",
+        "manifest": {
+          "report": "R1",
+          "period": "P1",
+          "scope": "西区",
+          "recipient": "W",
+          "permission": "西区木材",
+          "grade": null,
+          "scopeGrade": null,
+          "detailLevel": "aggregate_only",
+          "aggregate": {
+            "index": 0.3667,
+            "observedScopeIndex": 0.3667,
+            "observedCoverage": 1,
+            "reachableWeight": 11,
+            "totalWeight": 30,
+            "originGroupCount": 2,
+            "relationCount": 2
+          },
+          "relations": [
+            {
+              "od": "O2",
+              "origin": "H2",
+              "destination": "H3",
+              "cargo": "木材",
+              "status": "not_accepting",
+              "weight": 19,
+              "detailLevel": "aggregate_only"
+            },
+            {
+              "od": "O3",
+              "origin": "H3",
+              "destination": "H2",
+              "cargo": "木材",
+              "status": "reachable",
+              "weight": 11,
+              "detailLevel": "aggregate_only"
+            }
+          ],
+          "basedOnTransferRevisions": [
+            {
+              "station": "S2a",
+              "fromRoute": "T4",
+              "toRoute": "T5",
+              "state": "不足",
+              "reportedAt": "P1-01"
+            },
+            {
+              "station": "S2a",
+              "fromRoute": "T4",
+              "toRoute": "T5",
+              "state": "已更正",
+              "reportedAt": "P1-30"
+            }
+          ]
+        },
+        "revisionReason": "归属/换装更正（截至 P1-30）后按当前可比范围重出"
+      },
+      {
+        "report": "R2",
+        "recipient": "N",
+        "action": "retain_original",
+        "revision": "1",
+        "receivedAt": "P1-27",
+        "retainedMaterial": "北区受限分表",
+        "revisionReason": "换装更正晚于收悉时点，原版留存；更正不向该收件方补发明细",
+        "pendingCorrections": [
+          {
+            "station": "S2a",
+            "fromRoute": "T4",
+            "toRoute": "T5",
+            "state": "已更正",
+            "reportedAt": "P1-30"
+          }
+        ]
+      },
+      {
+        "report": "R3",
+        "recipient": "行业",
+        "action": "reissue_current_scope",
+        "revision": "2",
+        "manifest": {
+          "report": "R3",
+          "period": "P1",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "grade": null,
+          "scopeGrade": "乙",
+          "detailLevel": "aggregate_only",
+          "aggregate": {
+            "index": 0.65,
+            "observedScopeIndex": 0.7738,
+            "observedCoverage": 0.84,
+            "reachableWeight": 65,
+            "totalWeight": 100,
+            "originGroupCount": 3,
+            "relationCount": 5
+          },
+          "relations": [
+            {
+              "od": "O1",
+              "origin": "H1",
+              "destination": "H3",
+              "cargo": "杂货",
+              "status": "reachable",
+              "weight": 27,
+              "detailLevel": "aggregate_only"
+            },
+            {
+              "od": "O2",
+              "origin": "H2",
+              "destination": "H3",
+              "cargo": "木材",
+              "status": "not_accepting",
+              "weight": 19,
+              "detailLevel": "aggregate_only"
+            },
+            {
+              "od": "O3",
+              "origin": "H3",
+              "destination": "H2",
+              "cargo": "木材",
+              "status": "reachable",
+              "weight": 11,
+              "detailLevel": "aggregate_only"
+            },
+            {
+              "od": "O4",
+              "origin": "H1",
+              "destination": "H2",
+              "cargo": "散货",
+              "status": "pending_evidence",
+              "weight": 16,
+              "detailLevel": "aggregate_only"
+            },
+            {
+              "od": "N1",
+              "origin": "H2",
+              "destination": "H4",
+              "cargo": "散货",
+              "status": "reachable",
+              "weight": 27,
+              "detailLevel": "aggregate_only"
+            }
+          ],
+          "basedOnTransferRevisions": [
+            {
+              "station": "S2a",
+              "fromRoute": "T4",
+              "toRoute": "T5",
+              "state": "不足",
+              "reportedAt": "P1-01"
+            },
+            {
+              "station": "S2a",
+              "fromRoute": "T4",
+              "toRoute": "T5",
+              "state": "已更正",
+              "reportedAt": "P1-30"
+            }
+          ]
+        },
+        "revisionReason": "归属/换装更正（截至 P1-30）后按当前可比范围重出"
+      }
+    ],
+    "reconciliation": {
+      "ok": true,
+      "publicReachableWeight": 65,
+      "partnerReachableWeightUnion": 38,
+      "violations": []
+    },
+    "antiInference": [
+      {
+        "report": "R1",
+        "ok": true,
+        "leaks": []
+      },
+      {
+        "report": "R2",
+        "ok": true,
+        "leaks": []
+      }
+    ]
+  }
+}

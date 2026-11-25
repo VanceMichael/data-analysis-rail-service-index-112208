@@ -1,0 +1,1351 @@
+{
+  "ods": {
+    "P0:O1": {
+      "od": "O1",
+      "period": "P0",
+      "relation": {
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货"
+      },
+      "status": "reachable",
+      "reason": "journey_and_positive_evidence",
+      "frozenBaselineWeight": 25,
+      "currentWeight": 27,
+      "candidateJourneys": [
+        {
+          "routes": "T1+T2",
+          "stations": [
+            "S1",
+            "S2",
+            "S3"
+          ]
+        }
+      ],
+      "latestEvidence": {
+        "observation": "J01",
+        "routes": [
+          "T1",
+          "T2"
+        ],
+        "request": "受理",
+        "connection": "接续成功",
+        "delivery": "已交付",
+        "reportedAt": "P0-28"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J01",
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P0-28"
+        }
+      ],
+      "transferRevisions": [
+        {
+          "period": "P0",
+          "station": "S2",
+          "from_route": "T1",
+          "to_route": "T2",
+          "cargo": "杂货",
+          "min_wait": "2",
+          "state": "有效",
+          "reported_at": "P0-01"
+        }
+      ],
+      "blockers": [],
+      "receipts": []
+    },
+    "P0:O2": {
+      "od": "O2",
+      "period": "P0",
+      "relation": {
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材"
+      },
+      "status": "reachable",
+      "reason": "journey_and_positive_evidence",
+      "frozenBaselineWeight": 40,
+      "currentWeight": 19,
+      "candidateJourneys": [
+        {
+          "routes": "T3",
+          "stations": [
+            "S2",
+            "S3"
+          ]
+        }
+      ],
+      "latestEvidence": {
+        "observation": "J02",
+        "routes": [
+          "T3"
+        ],
+        "request": "受理",
+        "connection": "直达",
+        "delivery": "已交付",
+        "reportedAt": "P0-29"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J02",
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P0-29"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [],
+      "receipts": []
+    },
+    "P0:O3": {
+      "od": "O3",
+      "period": "P0",
+      "relation": {
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材"
+      },
+      "status": "pending_evidence",
+      "reason": "awaiting_report",
+      "frozenBaselineWeight": 10,
+      "currentWeight": 11,
+      "candidateJourneys": [],
+      "latestEvidence": {
+        "observation": "J03",
+        "routes": [],
+        "request": "未报",
+        "connection": "未报",
+        "delivery": "未报",
+        "reportedAt": "P0-30"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J03",
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [
+        {
+          "kind": "network",
+          "detail": "awaiting_report"
+        },
+        {
+          "kind": "awaiting_data",
+          "detail": "awaiting_report"
+        }
+      ],
+      "receipts": []
+    },
+    "P0:O4": {
+      "od": "O4",
+      "period": "P0",
+      "relation": {
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货"
+      },
+      "status": "pending_evidence",
+      "reason": "awaiting_report",
+      "frozenBaselineWeight": 25,
+      "currentWeight": 16,
+      "candidateJourneys": [],
+      "latestEvidence": {
+        "observation": "J04",
+        "routes": [],
+        "request": "未报",
+        "connection": "未报",
+        "delivery": "未报",
+        "reportedAt": "P0-30"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J04",
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [
+        {
+          "kind": "network",
+          "detail": "awaiting_report"
+        },
+        {
+          "kind": "awaiting_data",
+          "detail": "awaiting_report"
+        }
+      ],
+      "receipts": []
+    },
+    "P0:N1": {
+      "od": "N1",
+      "period": "P0",
+      "relation": {
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货"
+      },
+      "status": "pending_evidence",
+      "reason": "awaiting_report",
+      "frozenBaselineWeight": null,
+      "currentWeight": 27,
+      "candidateJourneys": [],
+      "latestEvidence": null,
+      "evidenceHistory": [],
+      "transferRevisions": [],
+      "blockers": [
+        {
+          "kind": "network",
+          "detail": "awaiting_report"
+        },
+        {
+          "kind": "awaiting_data",
+          "detail": "awaiting_report"
+        }
+      ],
+      "receipts": []
+    },
+    "P1:O1": {
+      "od": "O1",
+      "period": "P1",
+      "relation": {
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货"
+      },
+      "status": "reachable",
+      "reason": "journey_and_positive_evidence",
+      "frozenBaselineWeight": 25,
+      "currentWeight": 27,
+      "candidateJourneys": [
+        {
+          "routes": "T4+T5",
+          "stations": [
+            "S1",
+            "S2a",
+            "S3"
+          ]
+        }
+      ],
+      "latestEvidence": {
+        "observation": "J16",
+        "routes": [
+          "T4",
+          "T5"
+        ],
+        "request": "受理",
+        "connection": "接续成功",
+        "delivery": "已交付",
+        "reportedAt": "P1-31"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J11",
+          "request": "受理",
+          "connection": "待核",
+          "delivery": "待核",
+          "reportedAt": "P1-26"
+        },
+        {
+          "observation": "J16",
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P1-31"
+        }
+      ],
+      "transferRevisions": [
+        {
+          "period": "P1",
+          "station": "S2a",
+          "from_route": "T4",
+          "to_route": "T5",
+          "cargo": "杂货",
+          "min_wait": "5",
+          "state": "不足",
+          "reported_at": "P1-01"
+        },
+        {
+          "period": "P1",
+          "station": "S2a",
+          "from_route": "T4",
+          "to_route": "T5",
+          "cargo": "杂货",
+          "min_wait": "3",
+          "state": "已更正",
+          "reported_at": "P1-30"
+        }
+      ],
+      "blockers": [],
+      "receipts": []
+    },
+    "P1:O2": {
+      "od": "O2",
+      "period": "P1",
+      "relation": {
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材"
+      },
+      "status": "not_accepting",
+      "reason": "runs_but_not_accepting",
+      "frozenBaselineWeight": 40,
+      "currentWeight": 19,
+      "candidateJourneys": [],
+      "latestEvidence": {
+        "observation": "J12",
+        "routes": [
+          "T6"
+        ],
+        "request": "不受理",
+        "connection": "直达",
+        "delivery": "未交付",
+        "reportedAt": "P1-27"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J12",
+          "request": "不受理",
+          "connection": "直达",
+          "delivery": "未交付",
+          "reportedAt": "P1-27"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [
+        {
+          "kind": "network",
+          "detail": "runs_but_not_accepting"
+        },
+        {
+          "kind": "acceptance",
+          "detail": "runs_but_not_accepting"
+        }
+      ],
+      "receipts": []
+    },
+    "P1:O3": {
+      "od": "O3",
+      "period": "P1",
+      "relation": {
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材"
+      },
+      "status": "reachable",
+      "reason": "journey_and_positive_evidence",
+      "frozenBaselineWeight": 10,
+      "currentWeight": 11,
+      "candidateJourneys": [
+        {
+          "routes": "T7",
+          "stations": [
+            "S3",
+            "S2a"
+          ]
+        }
+      ],
+      "latestEvidence": {
+        "observation": "J13",
+        "routes": [
+          "T7"
+        ],
+        "request": "受理",
+        "connection": "直达",
+        "delivery": "已交付",
+        "reportedAt": "P1-28"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J13",
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P1-28"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [],
+      "receipts": []
+    },
+    "P1:O4": {
+      "od": "O4",
+      "period": "P1",
+      "relation": {
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货"
+      },
+      "status": "pending_evidence",
+      "reason": "awaiting_report",
+      "frozenBaselineWeight": 25,
+      "currentWeight": 16,
+      "candidateJourneys": [],
+      "latestEvidence": {
+        "observation": "J14",
+        "routes": [
+          "T9"
+        ],
+        "request": "未报",
+        "connection": "未报",
+        "delivery": "未报",
+        "reportedAt": "P1-29"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J14",
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P1-29"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [
+        {
+          "kind": "network",
+          "detail": "awaiting_report"
+        },
+        {
+          "kind": "awaiting_data",
+          "detail": "awaiting_report"
+        }
+      ],
+      "receipts": []
+    },
+    "P1:N1": {
+      "od": "N1",
+      "period": "P1",
+      "relation": {
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货"
+      },
+      "status": "reachable",
+      "reason": "journey_and_positive_evidence",
+      "frozenBaselineWeight": null,
+      "currentWeight": 27,
+      "candidateJourneys": [
+        {
+          "routes": "T8",
+          "stations": [
+            "S2b",
+            "S4"
+          ]
+        }
+      ],
+      "latestEvidence": {
+        "observation": "J15",
+        "routes": [
+          "T8"
+        ],
+        "request": "受理",
+        "connection": "直达",
+        "delivery": "已交付",
+        "reportedAt": "P1-27"
+      },
+      "evidenceHistory": [
+        {
+          "observation": "J15",
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P1-27"
+        }
+      ],
+      "transferRevisions": [],
+      "blockers": [],
+      "receipts": []
+    }
+  },
+  "stations": [
+    {
+      "station": "S1",
+      "canonicalGroups": [
+        "H1"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H1",
+          "timeline": [
+            {
+              "version": "V1",
+              "station": "S1",
+              "regional": "西",
+              "share": 1,
+              "frameCargo": "杂货"
+            },
+            {
+              "version": "V2",
+              "station": "S1",
+              "regional": "西",
+              "share": 1,
+              "frameCargo": "杂货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S1",
+          "version": "V1",
+          "canonical": "H1",
+          "regional": "西",
+          "share": "1",
+          "cargo": "杂货"
+        },
+        {
+          "station": "S1",
+          "version": "V2",
+          "canonical": "H1",
+          "regional": "西",
+          "share": "1",
+          "cargo": "杂货"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P0",
+          "route": "T1",
+          "from": "S1",
+          "to": "S2",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        },
+        {
+          "period": "P1",
+          "route": "T4",
+          "from": "S1",
+          "to": "S2a",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T9",
+          "from": "S1",
+          "to": "S2b",
+          "cargo": "散货",
+          "accept": "?",
+          "run": "?",
+          "frameworkVersion": "V2"
+        }
+      ],
+      "relatedTransfers": [],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "S2",
+      "canonicalGroups": [
+        "H2"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H2",
+          "timeline": [
+            {
+              "version": "V1",
+              "station": "S2",
+              "regional": "西",
+              "share": 1,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2a",
+              "regional": "西",
+              "share": 0.6,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2b",
+              "regional": "北",
+              "share": 0.4,
+              "frameCargo": "散货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S2",
+          "version": "V1",
+          "canonical": "H2",
+          "regional": "西",
+          "share": "1",
+          "cargo": "木材"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P0",
+          "route": "T1",
+          "from": "S1",
+          "to": "S2",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        },
+        {
+          "period": "P0",
+          "route": "T2",
+          "from": "S2",
+          "to": "S3",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        },
+        {
+          "period": "P0",
+          "route": "T3",
+          "from": "S2",
+          "to": "S3",
+          "cargo": "木材",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        }
+      ],
+      "relatedTransfers": [
+        {
+          "period": "P0",
+          "station": "S2",
+          "from_route": "T1",
+          "to_route": "T2",
+          "cargo": "杂货",
+          "min_wait": "2",
+          "state": "有效",
+          "reported_at": "P0-01"
+        }
+      ],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R1",
+          "scope": "西区",
+          "recipient": "W",
+          "permission": "西区木材",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R1",
+              "revision": "1",
+              "at": "P1-28",
+              "event": "待发送",
+              "recipient": "W",
+              "material": "西区木材分表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "S2a",
+      "canonicalGroups": [
+        "H2"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H2",
+          "timeline": [
+            {
+              "version": "V1",
+              "station": "S2",
+              "regional": "西",
+              "share": 1,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2a",
+              "regional": "西",
+              "share": 0.6,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2b",
+              "regional": "北",
+              "share": 0.4,
+              "frameCargo": "散货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S2a",
+          "version": "V2",
+          "canonical": "H2",
+          "regional": "西",
+          "share": "0.6",
+          "cargo": "木材"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P1",
+          "route": "T4",
+          "from": "S1",
+          "to": "S2a",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T5",
+          "from": "S2a",
+          "to": "S3",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T6",
+          "from": "S2a",
+          "to": "S3",
+          "cargo": "木材",
+          "accept": "no",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T7",
+          "from": "S3",
+          "to": "S2a",
+          "cargo": "木材",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        }
+      ],
+      "relatedTransfers": [
+        {
+          "period": "P1",
+          "station": "S2a",
+          "from_route": "T4",
+          "to_route": "T5",
+          "cargo": "杂货",
+          "min_wait": "5",
+          "state": "不足",
+          "reported_at": "P1-01"
+        },
+        {
+          "period": "P1",
+          "station": "S2a",
+          "from_route": "T4",
+          "to_route": "T5",
+          "cargo": "杂货",
+          "min_wait": "3",
+          "state": "已更正",
+          "reported_at": "P1-30"
+        }
+      ],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R1",
+          "scope": "西区",
+          "recipient": "W",
+          "permission": "西区木材",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R1",
+              "revision": "1",
+              "at": "P1-28",
+              "event": "待发送",
+              "recipient": "W",
+              "material": "西区木材分表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "S2b",
+      "canonicalGroups": [
+        "H2"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H2",
+          "timeline": [
+            {
+              "version": "V1",
+              "station": "S2",
+              "regional": "西",
+              "share": 1,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2a",
+              "regional": "西",
+              "share": 0.6,
+              "frameCargo": "木材"
+            },
+            {
+              "version": "V2",
+              "station": "S2b",
+              "regional": "北",
+              "share": 0.4,
+              "frameCargo": "散货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S2b",
+          "version": "V2",
+          "canonical": "H2",
+          "regional": "北",
+          "share": "0.4",
+          "cargo": "散货"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P1",
+          "route": "T8",
+          "from": "S2b",
+          "to": "S4",
+          "cargo": "散货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T9",
+          "from": "S1",
+          "to": "S2b",
+          "cargo": "散货",
+          "accept": "?",
+          "run": "?",
+          "frameworkVersion": "V2"
+        }
+      ],
+      "relatedTransfers": [],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R2",
+          "scope": "北区",
+          "recipient": "N",
+          "permission": "受限散货",
+          "state": "已送",
+          "receipts": [
+            {
+              "report": "R2",
+              "revision": "1",
+              "at": "P1-27",
+              "event": "收悉",
+              "recipient": "N",
+              "material": "北区受限分表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "S3",
+      "canonicalGroups": [
+        "H3"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H3",
+          "timeline": [
+            {
+              "version": "V1",
+              "station": "S3",
+              "regional": "东",
+              "share": 1,
+              "frameCargo": "杂货"
+            },
+            {
+              "version": "V2",
+              "station": "S3",
+              "regional": "东",
+              "share": 1,
+              "frameCargo": "杂货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S3",
+          "version": "V1",
+          "canonical": "H3",
+          "regional": "东",
+          "share": "1",
+          "cargo": "杂货"
+        },
+        {
+          "station": "S3",
+          "version": "V2",
+          "canonical": "H3",
+          "regional": "东",
+          "share": "1",
+          "cargo": "杂货"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P0",
+          "route": "T2",
+          "from": "S2",
+          "to": "S3",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        },
+        {
+          "period": "P0",
+          "route": "T3",
+          "from": "S2",
+          "to": "S3",
+          "cargo": "木材",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V1"
+        },
+        {
+          "period": "P1",
+          "route": "T5",
+          "from": "S2a",
+          "to": "S3",
+          "cargo": "杂货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T6",
+          "from": "S2a",
+          "to": "S3",
+          "cargo": "木材",
+          "accept": "no",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        },
+        {
+          "period": "P1",
+          "route": "T7",
+          "from": "S3",
+          "to": "S2a",
+          "cargo": "木材",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        }
+      ],
+      "relatedTransfers": [],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "S4",
+      "canonicalGroups": [
+        "H4"
+      ],
+      "groupHistory": [
+        {
+          "canonical": "H4",
+          "timeline": [
+            {
+              "version": "V2",
+              "station": "S4",
+              "regional": "东",
+              "share": 1,
+              "frameCargo": "散货"
+            }
+          ]
+        }
+      ],
+      "frameRows": [
+        {
+          "station": "S4",
+          "version": "V2",
+          "canonical": "H4",
+          "regional": "东",
+          "share": "1",
+          "cargo": "散货"
+        }
+      ],
+      "relatedRoutes": [
+        {
+          "period": "P1",
+          "route": "T8",
+          "from": "S2b",
+          "to": "S4",
+          "cargo": "散货",
+          "accept": "yes",
+          "run": "yes",
+          "frameworkVersion": "V2"
+        }
+      ],
+      "relatedTransfers": [],
+      "reportLinks": [
+        {
+          "report": "R0",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "已付阅",
+          "receipts": [
+            {
+              "report": "R0",
+              "revision": "1",
+              "at": "P0-31",
+              "event": "收悉",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        },
+        {
+          "report": "R3",
+          "scope": "全区",
+          "recipient": "行业",
+          "permission": "公开",
+          "state": "待发",
+          "receipts": [
+            {
+              "report": "R3",
+              "revision": "1",
+              "at": "P1-29",
+              "event": "待发送",
+              "recipient": "行业",
+              "material": "全区总表"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "report": "R0",
+      "period": "P0",
+      "scope": "全区",
+      "recipient": "行业",
+      "permission": "公开",
+      "currentCaliber": "1",
+      "reportingState": "已付阅",
+      "receipts": [
+        {
+          "report": "R0",
+          "revision": "1",
+          "at": "P0-31",
+          "event": "收悉",
+          "recipient": "行业",
+          "material": "全区总表"
+        }
+      ],
+      "latestReceipt": {
+        "report": "R0",
+        "revision": "1",
+        "at": "P0-31",
+        "event": "收悉",
+        "recipient": "行业",
+        "material": "全区总表"
+      },
+      "correctionsAfterReceipt": [],
+      "disposition": "delivered_unchanged"
+    },
+    {
+      "report": "R1",
+      "period": "P1",
+      "scope": "西区",
+      "recipient": "W",
+      "permission": "西区木材",
+      "currentCaliber": "1",
+      "reportingState": "待发",
+      "receipts": [
+        {
+          "report": "R1",
+          "revision": "1",
+          "at": "P1-28",
+          "event": "待发送",
+          "recipient": "W",
+          "material": "西区木材分表"
+        }
+      ],
+      "latestReceipt": {
+        "report": "R1",
+        "revision": "1",
+        "at": "P1-28",
+        "event": "待发送",
+        "recipient": "W",
+        "material": "西区木材分表"
+      },
+      "correctionsAfterReceipt": [],
+      "disposition": "not_delivered_reissue_before_send"
+    },
+    {
+      "report": "R2",
+      "period": "P1",
+      "scope": "北区",
+      "recipient": "N",
+      "permission": "受限散货",
+      "currentCaliber": "1",
+      "reportingState": "已送",
+      "receipts": [
+        {
+          "report": "R2",
+          "revision": "1",
+          "at": "P1-27",
+          "event": "收悉",
+          "recipient": "N",
+          "material": "北区受限分表"
+        }
+      ],
+      "latestReceipt": {
+        "report": "R2",
+        "revision": "1",
+        "at": "P1-27",
+        "event": "收悉",
+        "recipient": "N",
+        "material": "北区受限分表"
+      },
+      "correctionsAfterReceipt": [
+        {
+          "period": "P1",
+          "station": "S2a",
+          "from_route": "T4",
+          "to_route": "T5",
+          "cargo": "杂货",
+          "min_wait": "3",
+          "state": "已更正",
+          "reported_at": "P1-30"
+        }
+      ],
+      "disposition": "retain_original_with_revision_note"
+    },
+    {
+      "report": "R3",
+      "period": "P1",
+      "scope": "全区",
+      "recipient": "行业",
+      "permission": "公开",
+      "currentCaliber": "1",
+      "reportingState": "待发",
+      "receipts": [
+        {
+          "report": "R3",
+          "revision": "1",
+          "at": "P1-29",
+          "event": "待发送",
+          "recipient": "行业",
+          "material": "全区总表"
+        }
+      ],
+      "latestReceipt": {
+        "report": "R3",
+        "revision": "1",
+        "at": "P1-29",
+        "event": "待发送",
+        "recipient": "行业",
+        "material": "全区总表"
+      },
+      "correctionsAfterReceipt": [],
+      "disposition": "not_delivered_reissue_before_send"
+    }
+  ]
+}

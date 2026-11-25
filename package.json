@@ -8,6 +8,11 @@
   },
   "scripts": {
     "test": "node --test",
-    "data:check": "node --test test/data.test.js"
+    "data:check": "node --test test/data.test.js",
+    "validate": "node src/cli.js check",
+    "index": "node src/cli.js index",
+    "compare": "node src/cli.js compare",
+    "release": "node src/cli.js release",
+    "build": "node src/cli.js build"
   }
 }

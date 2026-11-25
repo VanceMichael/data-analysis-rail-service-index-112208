@@ -1,0 +1,767 @@
+{
+  "P0": {
+    "period": "P0",
+    "contractBasket": {
+      "basis": "frozen_baseline",
+      "totalWeight": 100,
+      "reachableWeight": 65,
+      "notAcceptingWeight": 0,
+      "noServiceWeight": 0,
+      "pendingWeight": 35,
+      "identifiableWeight": 65,
+      "originGroupCount": 3,
+      "relationCount": 4,
+      "index": 0.65,
+      "observedScopeIndex": 1,
+      "observedCoverage": 0.65
+    },
+    "currentFrame": {
+      "basis": "current_frame",
+      "totalWeight": 100,
+      "reachableWeight": 46,
+      "notAcceptingWeight": 0,
+      "noServiceWeight": 0,
+      "pendingWeight": 54,
+      "identifiableWeight": 46,
+      "originGroupCount": 3,
+      "relationCount": 5,
+      "index": 0.46,
+      "observedScopeIndex": 1,
+      "observedCoverage": 0.46
+    },
+    "grade": {
+      "grade": "乙",
+      "detailed": "站点级",
+      "minIndex": 0.6,
+      "minGroup": 3
+    },
+    "newServices": [
+      {
+        "od": "N1",
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货",
+        "weight": 27,
+        "status": "pending_evidence",
+        "routes": [],
+        "note": "当期框架内、冻结基期篮之外的新增服务范围"
+      }
+    ],
+    "evaluations": [
+      {
+        "period": "P0",
+        "od": "O1",
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货",
+        "framework": "V1",
+        "weight": "25",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T1",
+              "T2"
+            ],
+            "stations": [
+              "S1",
+              "S2",
+              "S3"
+            ],
+            "cargo": "杂货"
+          }
+        ],
+        "observation": {
+          "observation": "J01",
+          "routes": [
+            "T1",
+            "T2"
+          ],
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P0-28"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J01",
+            "request": "受理",
+            "connection": "接续成功",
+            "delivery": "已交付",
+            "reportedAt": "P0-28"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O2",
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材",
+        "framework": "V1",
+        "weight": "40",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T3"
+            ],
+            "stations": [
+              "S2",
+              "S3"
+            ],
+            "cargo": "木材"
+          }
+        ],
+        "observation": {
+          "observation": "J02",
+          "routes": [
+            "T3"
+          ],
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P0-29"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J02",
+            "request": "受理",
+            "connection": "直达",
+            "delivery": "已交付",
+            "reportedAt": "P0-29"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O3",
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材",
+        "framework": "V1",
+        "weight": "10",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J03",
+          "routes": [],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J03",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P0-30"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O4",
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货",
+        "framework": "V1",
+        "weight": "25",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J04",
+          "routes": [],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J04",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P0-30"
+          }
+        ]
+      }
+    ],
+    "currentEvaluations": [
+      {
+        "period": "P0",
+        "od": "O1",
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货",
+        "framework": "V1",
+        "weight": "27",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T1",
+              "T2"
+            ],
+            "stations": [
+              "S1",
+              "S2",
+              "S3"
+            ],
+            "cargo": "杂货"
+          }
+        ],
+        "observation": {
+          "observation": "J01",
+          "routes": [
+            "T1",
+            "T2"
+          ],
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P0-28"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J01",
+            "request": "受理",
+            "connection": "接续成功",
+            "delivery": "已交付",
+            "reportedAt": "P0-28"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O2",
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材",
+        "framework": "V1",
+        "weight": "19",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T3"
+            ],
+            "stations": [
+              "S2",
+              "S3"
+            ],
+            "cargo": "木材"
+          }
+        ],
+        "observation": {
+          "observation": "J02",
+          "routes": [
+            "T3"
+          ],
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P0-29"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J02",
+            "request": "受理",
+            "connection": "直达",
+            "delivery": "已交付",
+            "reportedAt": "P0-29"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O3",
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材",
+        "framework": "V1",
+        "weight": "11",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J03",
+          "routes": [],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J03",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P0-30"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "O4",
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货",
+        "framework": "V1",
+        "weight": "16",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J04",
+          "routes": [],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P0-30"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J04",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P0-30"
+          }
+        ]
+      },
+      {
+        "period": "P0",
+        "od": "N1",
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货",
+        "framework": "V1",
+        "weight": "27",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": null,
+        "evidenceHistory": []
+      }
+    ]
+  },
+  "P1": {
+    "period": "P1",
+    "contractBasket": {
+      "basis": "frozen_baseline",
+      "totalWeight": 100,
+      "reachableWeight": 35,
+      "notAcceptingWeight": 40,
+      "noServiceWeight": 0,
+      "pendingWeight": 25,
+      "identifiableWeight": 75,
+      "originGroupCount": 3,
+      "relationCount": 4,
+      "index": 0.35,
+      "observedScopeIndex": 0.4667,
+      "observedCoverage": 0.75
+    },
+    "currentFrame": {
+      "basis": "current_frame",
+      "totalWeight": 100,
+      "reachableWeight": 65,
+      "notAcceptingWeight": 19,
+      "noServiceWeight": 0,
+      "pendingWeight": 16,
+      "identifiableWeight": 84,
+      "originGroupCount": 3,
+      "relationCount": 5,
+      "index": 0.65,
+      "observedScopeIndex": 0.7738,
+      "observedCoverage": 0.84
+    },
+    "grade": {
+      "grade": null,
+      "detailed": null,
+      "reason": "below_all_grades_or_too_few_groups"
+    },
+    "newServices": [
+      {
+        "od": "N1",
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货",
+        "weight": 27,
+        "status": "reachable",
+        "routes": [
+          "T8"
+        ],
+        "note": "当期框架内、冻结基期篮之外的新增服务范围"
+      }
+    ],
+    "evaluations": [
+      {
+        "period": "P1",
+        "od": "O1",
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货",
+        "framework": "V2",
+        "weight": "25",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T4",
+              "T5"
+            ],
+            "stations": [
+              "S1",
+              "S2a",
+              "S3"
+            ],
+            "cargo": "杂货"
+          }
+        ],
+        "observation": {
+          "observation": "J16",
+          "routes": [
+            "T4",
+            "T5"
+          ],
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P1-31"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J11",
+            "request": "受理",
+            "connection": "待核",
+            "delivery": "待核",
+            "reportedAt": "P1-26"
+          },
+          {
+            "observation": "J16",
+            "request": "受理",
+            "connection": "接续成功",
+            "delivery": "已交付",
+            "reportedAt": "P1-31"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O2",
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材",
+        "framework": "V2",
+        "weight": "40",
+        "status": "not_accepting",
+        "reason": "runs_but_not_accepting",
+        "journeys": [],
+        "observation": {
+          "observation": "J12",
+          "routes": [
+            "T6"
+          ],
+          "request": "不受理",
+          "connection": "直达",
+          "delivery": "未交付",
+          "reportedAt": "P1-27"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J12",
+            "request": "不受理",
+            "connection": "直达",
+            "delivery": "未交付",
+            "reportedAt": "P1-27"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O3",
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材",
+        "framework": "V2",
+        "weight": "10",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T7"
+            ],
+            "stations": [
+              "S3",
+              "S2a"
+            ],
+            "cargo": "木材"
+          }
+        ],
+        "observation": {
+          "observation": "J13",
+          "routes": [
+            "T7"
+          ],
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P1-28"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J13",
+            "request": "受理",
+            "connection": "直达",
+            "delivery": "已交付",
+            "reportedAt": "P1-28"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O4",
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货",
+        "framework": "V2",
+        "weight": "25",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J14",
+          "routes": [
+            "T9"
+          ],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P1-29"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J14",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P1-29"
+          }
+        ]
+      }
+    ],
+    "currentEvaluations": [
+      {
+        "period": "P1",
+        "od": "O1",
+        "origin": "H1",
+        "destination": "H3",
+        "cargo": "杂货",
+        "framework": "V2",
+        "weight": "27",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T4",
+              "T5"
+            ],
+            "stations": [
+              "S1",
+              "S2a",
+              "S3"
+            ],
+            "cargo": "杂货"
+          }
+        ],
+        "observation": {
+          "observation": "J16",
+          "routes": [
+            "T4",
+            "T5"
+          ],
+          "request": "受理",
+          "connection": "接续成功",
+          "delivery": "已交付",
+          "reportedAt": "P1-31"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J11",
+            "request": "受理",
+            "connection": "待核",
+            "delivery": "待核",
+            "reportedAt": "P1-26"
+          },
+          {
+            "observation": "J16",
+            "request": "受理",
+            "connection": "接续成功",
+            "delivery": "已交付",
+            "reportedAt": "P1-31"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O2",
+        "origin": "H2",
+        "destination": "H3",
+        "cargo": "木材",
+        "framework": "V2",
+        "weight": "19",
+        "status": "not_accepting",
+        "reason": "runs_but_not_accepting",
+        "journeys": [],
+        "observation": {
+          "observation": "J12",
+          "routes": [
+            "T6"
+          ],
+          "request": "不受理",
+          "connection": "直达",
+          "delivery": "未交付",
+          "reportedAt": "P1-27"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J12",
+            "request": "不受理",
+            "connection": "直达",
+            "delivery": "未交付",
+            "reportedAt": "P1-27"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O3",
+        "origin": "H3",
+        "destination": "H2",
+        "cargo": "木材",
+        "framework": "V2",
+        "weight": "11",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T7"
+            ],
+            "stations": [
+              "S3",
+              "S2a"
+            ],
+            "cargo": "木材"
+          }
+        ],
+        "observation": {
+          "observation": "J13",
+          "routes": [
+            "T7"
+          ],
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P1-28"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J13",
+            "request": "受理",
+            "connection": "直达",
+            "delivery": "已交付",
+            "reportedAt": "P1-28"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "O4",
+        "origin": "H1",
+        "destination": "H2",
+        "cargo": "散货",
+        "framework": "V2",
+        "weight": "16",
+        "status": "pending_evidence",
+        "reason": "awaiting_report",
+        "journeys": [],
+        "observation": {
+          "observation": "J14",
+          "routes": [
+            "T9"
+          ],
+          "request": "未报",
+          "connection": "未报",
+          "delivery": "未报",
+          "reportedAt": "P1-29"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J14",
+            "request": "未报",
+            "connection": "未报",
+            "delivery": "未报",
+            "reportedAt": "P1-29"
+          }
+        ]
+      },
+      {
+        "period": "P1",
+        "od": "N1",
+        "origin": "H2",
+        "destination": "H4",
+        "cargo": "散货",
+        "framework": "V2",
+        "weight": "27",
+        "status": "reachable",
+        "reason": "journey_and_positive_evidence",
+        "journeys": [
+          {
+            "routes": [
+              "T8"
+            ],
+            "stations": [
+              "S2b",
+              "S4"
+            ],
+            "cargo": "散货"
+          }
+        ],
+        "observation": {
+          "observation": "J15",
+          "routes": [
+            "T8"
+          ],
+          "request": "受理",
+          "connection": "直达",
+          "delivery": "已交付",
+          "reportedAt": "P1-27"
+        },
+        "evidenceHistory": [
+          {
+            "observation": "J15",
+            "request": "受理",
+            "connection": "直达",
+            "delivery": "已交付",
+            "reportedAt": "P1-27"
+          }
+        ]
+      }
+    ]
+  }
+}

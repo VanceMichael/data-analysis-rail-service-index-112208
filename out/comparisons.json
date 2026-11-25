@@ -1,0 +1,129 @@
+[
+  {
+    "from": "P0",
+    "to": "P1",
+    "comparison": {
+      "comparableRelations": [
+        {
+          "od": "O1",
+          "origin": "H1",
+          "destination": "H3",
+          "cargo": "杂货",
+          "weight": 25,
+          "prevStatus": "reachable",
+          "currStatus": "reachable",
+          "changed": false,
+          "prevReachable": true,
+          "currReachable": true
+        },
+        {
+          "od": "O2",
+          "origin": "H2",
+          "destination": "H3",
+          "cargo": "木材",
+          "weight": 40,
+          "prevStatus": "reachable",
+          "currStatus": "not_accepting",
+          "changed": true,
+          "prevReachable": true,
+          "currReachable": false
+        }
+      ],
+      "excluded": [
+        {
+          "od": "O3",
+          "reason": "missing_or_pending_observation",
+          "prevStatus": "pending_evidence",
+          "currStatus": "reachable"
+        },
+        {
+          "od": "O4",
+          "reason": "missing_or_pending_observation",
+          "prevStatus": "pending_evidence",
+          "currStatus": "pending_evidence"
+        }
+      ],
+      "currentOnly": [
+        {
+          "od": "N1",
+          "cargo": "散货",
+          "reason": "not_in_baseline_basket",
+          "currStatus": "reachable"
+        }
+      ],
+      "baselineOnly": [],
+      "commonWeight": 65,
+      "prevIndexOnCommon": 1,
+      "currIndexOnCommon": 0.3846
+    },
+    "decomposition": {
+      "indexDelta": -0.3,
+      "serviceDrivers": [
+        {
+          "od": "O2",
+          "cargo": "木材",
+          "kind": "service_loss",
+          "prevStatus": "reachable",
+          "currStatus": "not_accepting"
+        }
+      ],
+      "coverageChanges": [
+        {
+          "od": "O3",
+          "kind": "observation_coverage",
+          "detail": "missing_or_pending_observation"
+        },
+        {
+          "od": "O4",
+          "kind": "observation_coverage",
+          "detail": "missing_or_pending_observation"
+        },
+        {
+          "od": "N1",
+          "kind": "scope_expansion",
+          "detail": "not_in_baseline_basket"
+        }
+      ],
+      "note": "serviceDrivers 为共同可识别范围内的真实可达性变化；coverageChanges 为口径/覆盖变化，不计作基期范围服务改善"
+    },
+    "dropExplanation": {
+      "prevIndex": 0.65,
+      "currIndex": 0.35,
+      "delta": -0.3,
+      "serviceLoss": [
+        {
+          "od": "O2",
+          "cargo": "木材",
+          "kind": "service_loss",
+          "prevStatus": "reachable",
+          "currStatus": "not_accepting"
+        }
+      ],
+      "serviceGain": [],
+      "pendingOrCoverage": [
+        {
+          "od": "O3",
+          "kind": "observation_coverage",
+          "detail": "missing_or_pending_observation"
+        },
+        {
+          "od": "O4",
+          "kind": "observation_coverage",
+          "detail": "missing_or_pending_observation"
+        },
+        {
+          "od": "N1",
+          "kind": "scope_expansion",
+          "detail": "not_in_baseline_basket"
+        }
+      ],
+      "commonScope": {
+        "relationCount": 2,
+        "commonWeight": 65,
+        "prevIndexOnCommon": 1,
+        "currIndexOnCommon": 0.3846
+      },
+      "explanation": "serviceLoss 为共同可识别范围内真正不通的业务段；serviceGain 为真实改善；pendingOrCoverage 是口径/覆盖变化或等待资料，不得归作基期范围服务改善"
+    }
+  }
+]
